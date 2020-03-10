@@ -1,6 +1,67 @@
 .btn
-  width: 10rem
-  height: 5rem
 
-  background-color: darkcyan
+  //changes for buttons
+  border: none
+  cursor: pointer
+  backface-visibility: hidden
   align-self: start
+  &:not(:last-child)
+    background-color: chartreuse
+
+
+
+  &:hover //animacja przycisku
+        transform: translateY(-.3rem)
+        box-shadow: 0 1rem 1rem rgba(0,0,0,.2)
+        &::after
+          transform: scaleX(1.2) scaleY(1.6)
+          opacity: 0
+  &:active,&:focus
+    outline: none
+    transform: translateY(-1px)
+  &,&:link,&:visited //stan selektora zakotwiczajacy
+        text-transform: uppercase
+        text-decoration: none
+        display: inline-block //bez tego zajmuje czesc tekstu powyzej dlatego powinniśmy tego użyć
+        //border-radius: 10rem
+        transition: all .2s //wszystkie  właściowości moga bybć animowane
+        position: relative
+        padding: 1.5rem 4rem
+        font-size: $default-font-size
+  &--white
+    background-color: $colour-white
+    color: $colour-grey-dark
+    //padding: 15px 40px
+    animation: moveInBottom
+    animation-duration: 4s
+    &::after
+      background-color: $colour-white
+  &--green
+    background-color: $colours-primary
+    color: $colour-white
+    &::after
+      background-color: $colours-primary
+  &--animated
+    animation: moveInBottom .5 ease-out
+    animation-fill-mode: backwards
+
+.btn-text
+  &:link,&:visited
+    font-size: $default-font-size
+    color: $colours-primary
+    display: inline-block
+    text-decoration: none
+    border-bottom:  1px solid  $colours-primary
+    padding: 3px
+    font-weight: 700
+    transition: all .2s
+
+  &:hover
+    background-color: $colours-primary
+    color: $colour-white
+    box-shadow: 0 1rem 2rem rgba($colour-black, .15)
+    transform: translateY(-2px)
+
+  &:active
+    box-shadow: 0 5rem 1rem rgba($colour-black, .15)
+    transform: translateY(0px)
