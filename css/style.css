@@ -1,0 +1,96 @@
+.btn {
+  width: 10rem;
+  height: 5rem;
+  background-color: darkcyan;
+  align-self: start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: -100vh;
+  left: -100vw;
+  height: 300vh;
+  width: 300vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.5s linear;
+}
+.container section {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container section h1 {
+  font-family: Phenomena;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-1 {
+  background-color: red;
+}
+
+.section-2 {
+  background-color: green;
+}
+
+.section-3 {
+  background-color: rgba(33, 49, 112, 0.67);
+}
+
+.section-4 {
+  background-color: yellow;
+}
+
+.section-6 {
+  background-color: pink;
+}
+
+.section-7 {
+  background-color: gray;
+}
+
+.section-8 {
+  background-color: cadetblue;
+}
+
+.section-9 {
+  background-color: white;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+}
+.home__myface {
+  height: 90%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
