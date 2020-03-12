@@ -2,22 +2,19 @@
 .home
   display: flex
   position: relative
+  flex-direction: row
   top: 0
   left: 0
   background-image: url('../img/bgsvg.svg')
   background-position: center 0
   align-items: center
+
+
   &__text-box
     transform: translate(0,-50%)
     padding: 0 6rem
-
-
-
-  &__myface-box
-
-
-
-
+    z-index: 10
+    flex-basis: 50%
 
 
   &__myface
@@ -25,7 +22,7 @@
     bottom: 0
     left: 50%
     transform: translateX(-50%)
-    width: 33%
+    height: 90%
 
 
 

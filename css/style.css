@@ -15,8 +15,6 @@ body {
   height: 300vh;
   width: 300vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   transition: 0.5s linear;
 }
@@ -58,7 +56,7 @@ body {
 }
 .heading-primary--main {
   display: block;
-  font-size: 16rem;
+  font-size: 14rem;
   font-weight: 400;
 }
 .heading-primary--sub {
@@ -68,6 +66,10 @@ body {
 .heading-primary--sub2 {
   display: block;
   font-size: 10rem;
+}
+
+.home__text-box > .heading-primary > * {
+  text-shadow: -4px -6px 0 #BC080E, -4px -3px 0 #BC080E, -4px 0px 0 #BC080E, -4px 3px 0 #BC080E, -4px 6px 0 #BC080E, -2px -6px 0 #BC080E, -2px -3px 0 #BC080E, -2px 0px 0 #BC080E, -2px 3px 0 #BC080E, -2px 6px 0 #BC080E, 0px -6px 0 #BC080E, 0px -3px 0 #BC080E, 0px 0px 0 #BC080E, 0px 3px 0 #BC080E, 0px 6px 0 #BC080E, 2px -6px 0 #BC080E, 2px -3px 0 #BC080E, 2px 0px 0 #BC080E, 2px 3px 0 #BC080E, 2px 6px 0 #BC080E, 4px -6px 0 #BC080E, 4px -3px 0 #BC080E, 4px 0px 0 #BC080E, 4px 3px 0 #BC080E, 4px 6px 0 #BC080E;
 }
 
 .section-1 {
@@ -105,6 +107,7 @@ body {
 .home {
   display: flex;
   position: relative;
+  flex-direction: row;
   top: 0;
   left: 0;
   background-image: url("../img/bgsvg.svg");
@@ -114,13 +117,48 @@ body {
 .home__text-box {
   transform: translate(0, -50%);
   padding: 0 6rem;
+  z-index: 10;
+  flex-basis: 50%;
 }
 .home__myface {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 33%;
+  height: 90%;
+}
+
+.navigation {
+  display: flex;
+  flex-basis: 50%;
+  padding: 5rem;
+  z-index: 10;
+  justify-content: flex-end;
+}
+.navigation__list {
+  text-decoration: none;
+  list-style: none;
+}
+.navigation__item {
+  margin: 1rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  backface-visibility: hidden;
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px -6px 0 #00578f, -4px -3px 0 #00578f, -4px 0px 0 #00578f, -4px 3px 0 #00578f, -4px 6px 0 #00578f, -2px -6px 0 #00578f, -2px -3px 0 #00578f, -2px 0px 0 #00578f, -2px 3px 0 #00578f, -2px 6px 0 #00578f, 0px -6px 0 #00578f, 0px -3px 0 #00578f, 0px 0px 0 #00578f, 0px 3px 0 #00578f, 0px 6px 0 #00578f, 2px -6px 0 #00578f, 2px -3px 0 #00578f, 2px 0px 0 #00578f, 2px 3px 0 #00578f, 2px 6px 0 #00578f, 4px -6px 0 #00578f, 4px -3px 0 #00578f, 4px 0px 0 #00578f, 4px 3px 0 #00578f, 4px 6px 0 #00578f;
+  -webkit-background-size: 220%;
+  background-size: 230%;
+  transition: all 0.4s;
+}
+.navigation__link:link span, .navigation__link:visited span {
+  display: inline-block;
+  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
