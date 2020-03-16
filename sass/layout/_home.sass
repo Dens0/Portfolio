@@ -2,33 +2,57 @@
 .home
   display: flex
   position: relative
-  flex-direction: row
-  top: 0
-  left: 0
-  background-image: url('../img/bg.svg')
-  -webkit-background-size: cover
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center 0
-  align-items: center
 
 
-  &__text-box
-    transform: translate(0,-50%)
-    padding: 0 6rem
-    z-index: 10
-    flex-basis: 50%
-
+  &__center
+    display: flex
+    position: fixed
+    background-color: #1E1E1E
+    @include center_abs
+    flex-grow: 1
+    width: 85vw
+    height: 88vh
+    border: 5px solid $colors-primary
+    box-shadow: -1rem 1rem 5rem rgba($colors-primary,.7)
 
   &__myface
     position: absolute
     bottom: 0
     left: 50%
     transform: translateX(-50%)
-    height: 90%
+    height: 95%
+  &__circle
+    position: absolute
+    top: 9%
+    left: 48%
+    transform: translateX(-50%)
+    width: 40rem
+    height: 40rem
+    border-radius: 50%
+    z-index: -1
+    background-color: $colors-primary
+    box-shadow: 0 10rem 30rem rgba($colors-primary,.7)
+    //background: radial-gradient(circle, rgba(13,255,220,1) 27%, rgba(0,255,192,1) 100%)
+  &__surname
+    @include center_abs
+    transform: translateX(-50%)
+    font-size: 10rem
+    color: white
+    z-index: 1
+    letter-spacing: 3rem
+    @include stroke(1px,white)
+  &__half
+    flex-grow: 1
+
+    &-1
+      background: $colors-primary-dark  /* fallback for old browsers */
+      background: linear-gradient(to right, $colors-primary, $colors-primary-dark) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
 
-
+    &-2
+      background: #000000  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #1e1e1e, #000000)  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #1e1e1e, #000000) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
