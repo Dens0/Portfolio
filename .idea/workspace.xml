@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580651e9-55b7-499f-9785-aa3fccf4ef3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sass/components/_story.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/components/_navigation.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_navigation.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_home.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_home.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_right-top.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_right-top.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,20 +20,38 @@
     <splitter split-orientation="horizontal" split-proportion="0.4114094">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/layout/_home.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="627">
-                  <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+                <state relative-caret-position="456">
+                  <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/pages/_main.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.sass">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="19">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                  <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/components/_navigation.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="152">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -50,8 +63,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+                <state relative-caret-position="57">
+                  <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
                   <folding>
                     <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -62,6 +75,15 @@
                     <element signature="n#section#7;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#section#8;n#div#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/base/_typography.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
                 </state>
               </provider>
             </entry>
@@ -112,17 +134,17 @@
         <option value="$PROJECT_DIR$/sass/base/_base.sass" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/sass/components/_button.sass" />
-        <option value="$PROJECT_DIR$/sass/base/_typography.sass" />
         <option value="$PROJECT_DIR$/sass/pages/_main.sass" />
         <option value="$PROJECT_DIR$/sass/layout/_right-top.sass" />
         <option value="$PROJECT_DIR$/sass/components/_story.sass" />
         <option value="$PROJECT_DIR$/sass/abstracts/_mixins.sass" />
         <option value="$PROJECT_DIR$/sass/layout/_navigation.sass" />
         <option value="$PROJECT_DIR$/sass/style.sass" />
+        <option value="$PROJECT_DIR$/sass/base/_typography.sass" />
         <option value="$PROJECT_DIR$/sass/components/_navigation.sass" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/sass/layout/_home.sass" />
         <option value="$PROJECT_DIR$/sass/abstracts/_variables.sass" />
+        <option value="$PROJECT_DIR$/sass/layout/_home.sass" />
       </list>
     </option>
   </component>
@@ -151,6 +173,17 @@
               <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="projektStart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -287,7 +320,7 @@
       <workItem from="1584198984927" duration="14194000" />
       <workItem from="1584265988143" duration="26466000" />
       <workItem from="1584358783393" duration="1748000" />
-      <workItem from="1584360755669" duration="605000" />
+      <workItem from="1584360755669" duration="9078000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1583872624933</created>
@@ -338,17 +371,31 @@
       <option name="project" value="LOCAL" />
       <updated>1584211752170</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="idea change">
+      <created>1584363305038</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584363305038</updated>
+    </task>
+    <task id="LOCAL-00009" summary="name &amp;and circles">
+      <created>1584370348605</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584370348605</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176519000" />
+    <option name="totallyTimeSpent" value="184992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892932" visible="true" weight="0.15637584" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892932" weight="0.15637584" />
       <window_info id="Structure" order="1" sideWeight="0.5010707" side_tool="true" weight="0.152349" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,7 +451,9 @@
     <MESSAGE value="building home page" />
     <MESSAGE value="Navi" />
     <MESSAGE value="bg -img" />
-    <option name="LAST_COMMIT_MESSAGE" value="bg -img" />
+    <MESSAGE value="idea change" />
+    <MESSAGE value="name &amp;and circles" />
+    <option name="LAST_COMMIT_MESSAGE" value="name &amp;and circles" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Nowe_portfolio$index_html.dat" NAME="index.html Coverage Results" MODIFIED="1568502312647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -428,13 +477,6 @@
     <entry file="file://$PROJECT_DIR$/sass/base/_animation.sass" />
     <entry file="file://$PROJECT_DIR$/sass/base/_utilities.sass" />
     <entry file="file://$PROJECT_DIR$/img/bg1.jpg" />
-    <entry file="file://$PROJECT_DIR$/sass/base/_typography.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/bg.jpg" />
     <entry file="file://$PROJECT_DIR$/img/bg1.svg" />
     <entry file="file://$PROJECT_DIR$/sass/layout/_right-bottom.sass">
@@ -520,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/pages/_main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/base/_base.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -535,13 +570,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_navigation.sass" />
-    <entry file="file://$PROJECT_DIR$/sass/components/_navigation.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -556,24 +584,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/layout/_home.sass">
+    <entry file="file://$PROJECT_DIR$/css/icons-reference.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base/_typography.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.sass">
+    <entry file="file://$PROJECT_DIR$/sass/components/_navigation.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+        <state relative-caret-position="57">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
             <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -584,6 +618,27 @@
             <element signature="n#section#7;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#8;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/pages/_main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_home.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="91" selection-end-column="14" />
         </state>
       </provider>
     </entry>

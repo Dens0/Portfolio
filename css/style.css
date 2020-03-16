@@ -1,12 +1,10 @@
 .navigation {
   z-index: 1;
-  background-color: rgba(30, 77, 102, 0.8);
   position: fixed;
   right: 0;
-  top: 0;
-  background: #373B44;
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44);
-  background: linear-gradient(to top, rgba(40, 40, 40, 0.8), rgba(30, 30, 30, 0.8));
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #ff9937;
 }
 .navigation__icon {
   width: 100%;
@@ -17,7 +15,7 @@
   list-style: none;
 }
 .navigation__item {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   z-index: 1;
 }
 .navigation__item:hover {
@@ -28,7 +26,7 @@
 }
 .navigation__link:link, .navigation__link:visited {
   backface-visibility: hidden;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -135,7 +133,7 @@ body {
   flex-grow: 1;
   width: 85vw;
   height: 88vh;
-  border: 5px solid #62f8fe;
+  border: 5px solid #ff9937;
   box-shadow: -1rem 1rem 5rem rgba(0, 0, 0, 0.7);
   overflow: hidden;
   backface-visibility: hidden;
@@ -151,8 +149,8 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-  background-color: #62f8fe;
-  box-shadow: 0 10rem 30rem rgba(98, 248, 254, 0.7);
+  background-color: #ff9937;
+  box-shadow: 0 10rem 30rem rgba(255, 153, 55, 0.7);
 }
 .home__circle-1 {
   width: 40rem;
@@ -174,6 +172,25 @@ body {
   left: 0;
   transform: translate(-50%, -50%);
 }
+.home__circle-4 {
+  background-color: transparent;
+  box-shadow: none;
+  width: 40rem;
+  height: 40rem;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+  overflow: hidden;
+}
+.home__circle-code {
+  position: absolute;
+  font-size: 10rem;
+  font-family: "Major Mono Display", monospace;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  top: 50%;
+  left: 10%;
+}
 .home__surname {
   position: absolute;
   top: 50%;
@@ -181,26 +198,28 @@ body {
   transform: translate(-50%, -50%);
   transform: translateX(-50%);
   font-size: 10rem;
-  color: white;
+  color: #fff;
   z-index: 1;
   letter-spacing: 3rem;
 }
 .home__name {
   position: absolute;
-  font-size: 10rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30rem;
   color: rgba(255, 255, 255, 0.15);
   z-index: 1;
-  letter-spacing: 5rem;
-  transform: rotate(-70deg);
-  top: 30%;
-  left: 6%;
+  transform: rotate(-90deg);
+  bottom: 30%;
+  left: -20%;
 }
 .home__half {
   flex-grow: 1;
 }
 .home__half-1 {
-  background: #3a788f;
-  background: linear-gradient(to right, #62f8fe, #3a788f);
+  background: #ff8500;
+  background: linear-gradient(to right, #ff9937, #ff8500);
 }
 .home__half-2 {
   background: #000000;

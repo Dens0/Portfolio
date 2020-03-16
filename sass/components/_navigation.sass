@@ -1,12 +1,12 @@
 .navigation
   z-index: 1
-  background-color: rgba($color-tertiary-light,.80)
   position: fixed
   right: 0
-  top: 0
-  background: #373B44  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, rgba(#282828,.8), rgba(#1e1e1e,.8)) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 50%
+  transform: translateY(-50%)
+  border: 2px solid $colors-primary
+
+
 
 
 
@@ -22,9 +22,11 @@
 
 
 
+
   &__item
-    padding:  0 1rem
+    padding:  1rem 1rem
     z-index: 1
+
     &:hover
       background-color: rgba($color-tertiary-light,.60)
 
@@ -36,7 +38,7 @@
     //width: 100%
     &:link, &:visited
       backface-visibility: hidden
-      font-size: 3rem
+      font-size: 2rem
       font-weight: 300
       padding: 1rem 2rem
       text-decoration: none

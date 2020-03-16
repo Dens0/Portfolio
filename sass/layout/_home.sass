@@ -49,6 +49,25 @@
       top: 60%
       left: 0
       transform: translate(-50%,-50%)
+    &-4
+      background-color: transparent
+      box-shadow: none
+      width: 40rem
+      height: 40rem
+      top: 0
+      left: 0
+      transform: translate(-40%,-40%)
+      overflow: hidden
+
+    &-code
+      position: absolute
+      font-size: 10rem
+      font-family: 'Major Mono Display', monospace
+      color: rgba($color-white,.05)
+      z-index: 1
+      top: 50%
+      left: 10%
+
 
 
 
@@ -57,20 +76,20 @@
     @include center_abs
     transform: translateX(-50%)
     font-size: 10rem
-    color: white
+    color: $color-white
     z-index: 1
     letter-spacing: 3rem
 
 
   &__name
-    position: absolute
-    font-size: 10rem
+    @include center_abs
+
+    font-size: 30rem
     color: rgba($color-white,.15)
     z-index: 1
-    letter-spacing: 5rem
-    transform: rotate(-70deg)
-    top: 30%
-    left: 6%
+    transform: rotate(-90deg)
+    bottom: 30%
+    left: -20%
 
   &__half
     flex-grow: 1
