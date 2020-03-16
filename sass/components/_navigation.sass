@@ -11,61 +11,32 @@
 
 
 
-  &__icon
-    width: 100%
-    height: 100%
-
-
-
-  &__list
-    text-decoration: none
-    list-style: none
-
-
-
-
+.side-nav
+  font-size: 2rem
+  list-style: none
 
   &__item
-    padding:  1rem 1rem
-    z-index: 1
-
-    &:hover
-      background-color: rgba($color-tertiary-light,.60)
+    position: relative
+    padding: 1rem
+    text-decoration: none
 
 
+    &:not(:last-child)
+      margin-bottom: .5rem
 
+  &__item::before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 3px
+    background-color: $colors-primary
+    transform: scaleY(0)
+    transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s, background-color .1s
+    backface-visibility: hidden
 
-  &__link
-    z-index: 2
-    //width: 100%
-    &:link, &:visited
-      backface-visibility: hidden
-      font-size: 2rem
-      font-weight: 300
-      padding: 1rem 2rem
-      text-decoration: none
-      text-transform: uppercase
-      transition: all .5s
+  &__item:hover::before
 
-      background-image: linear-gradient(to right, $colors-primary, $colors-primary-dark)
-      display: inline-block // Dzięki temu napis nie zajmuję całej szerokości a jedynie tyle ile potrzebuje
-      -webkit-background-clip: text // tło zostaje przycięte w miejsu gdzie jest tło
-      color: transparent
-      letter-spacing: 2px
-      padding-bottom: 1.5rem
-
-      &:hover
-        transform: skewY(2.5deg) scale(1.1)
-        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.4)
-    //@include stroke(2,$color-tertiary-light)
-//
-//
-//    -webkit-background-size: 220%
-//    background-size: 230%
-//    transition: all .4s
-//    span
-//      display: inline-block
-//      margin-right: 3rem
-//    &::before
-
-
+    transform: scaleY(1)
+    width: 100%
