@@ -2,6 +2,9 @@
 .home
   display: flex
   position: relative
+  &::selection
+    background: red
+
 
 
   &__center
@@ -23,6 +26,7 @@
     left: 50%
     transform: translateX(-50%)
     height: 95%
+    z-index: 9
   &__circle
     position: absolute
 
@@ -77,19 +81,28 @@
     transform: translateX(-50%)
     font-size: 10rem
     color: $color-white
-    z-index: 1
+    z-index: 10
     letter-spacing: 3rem
 
 
   &__name
-    @include center_abs
-
+    position: absolute
     font-size: 30rem
     color: rgba($color-white,.15)
     z-index: 1
     transform: rotate(-90deg)
     bottom: 30%
-    left: -20%
+    left: -10%
+
+  &__dev
+    position: absolute
+    font-size: 10rem
+    color: rgba($color-white,.3)
+    z-index: -1
+    top: 2%
+    right: 2%
+
+
 
   &__half
     flex-grow: 1

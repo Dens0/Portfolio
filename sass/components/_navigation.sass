@@ -1,10 +1,11 @@
 .navigation
-  z-index: 1
+  z-index: 11
   position: fixed
   right: 0
   top: 50%
   transform: translateY(-50%)
-  border: 2px solid $colors-primary
+  background-color: lighten(#000000,10%)
+  //border: 2px solid $colors-primary
 
 
 
@@ -19,6 +20,7 @@
   &__list
     text-decoration: none
     list-style: none
+
 
 
 
@@ -43,8 +45,19 @@
       padding: 1rem 2rem
       text-decoration: none
       text-transform: uppercase
-      color: $color-white
-//@include stroke(2,$color-tertiary-light)
+      transition: all .5s
+
+      background-image: linear-gradient(to right, $colors-primary, $colors-primary-dark)
+      display: inline-block // Dzięki temu napis nie zajmuję całej szerokości a jedynie tyle ile potrzebuje
+      -webkit-background-clip: text // tło zostaje przycięte w miejsu gdzie jest tło
+      color: transparent
+      letter-spacing: 2px
+      padding-bottom: 1.5rem
+
+      &:hover
+        transform: skewY(2.5deg) scale(1.1)
+        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.4)
+    //@include stroke(2,$color-tertiary-light)
 //
 //
 //    -webkit-background-size: 220%
