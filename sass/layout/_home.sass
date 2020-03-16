@@ -13,7 +13,9 @@
     width: 85vw
     height: 88vh
     border: 5px solid $colors-primary
-    box-shadow: -1rem 1rem 5rem rgba($colors-primary,.7)
+    box-shadow: -1rem 1rem 5rem rgba($color-black,.7)
+    overflow: hidden
+    backface-visibility: hidden
 
   &__myface
     position: absolute
@@ -23,16 +25,34 @@
     height: 95%
   &__circle
     position: absolute
-    top: 9%
-    left: 48%
-    transform: translateX(-50%)
-    width: 40rem
-    height: 40rem
+
     border-radius: 50%
     z-index: -1
     background-color: $colors-primary
     box-shadow: 0 10rem 30rem rgba($colors-primary,.7)
     //background: radial-gradient(circle, rgba(13,255,220,1) 27%, rgba(0,255,192,1) 100%)
+    &-1
+     width: 40rem
+     height: 40rem
+     top: 9%
+     left: 36%
+
+    &-2
+       width: 25rem
+       height: 25rem
+       bottom: 0
+       right: 0
+       transform: translate(40%,20%)
+    &-3
+      width: 25rem
+      height: 25rem
+      top: 60%
+      left: 0
+      transform: translate(-50%,-50%)
+
+
+
+
   &__surname
     @include center_abs
     transform: translateX(-50%)
@@ -40,7 +60,18 @@
     color: white
     z-index: 1
     letter-spacing: 3rem
-    @include stroke(1px,white)
+
+
+  &__name
+    position: absolute
+    font-size: 10rem
+    color: rgba($color-white,.15)
+    z-index: 1
+    letter-spacing: 5rem
+    transform: rotate(-70deg)
+    top: 30%
+    left: 6%
+
   &__half
     flex-grow: 1
 
