@@ -6,6 +6,29 @@
   transform: translateY(-50%);
   background-color: #1a1a1a;
 }
+.navigation__link {
+  backface-visibility: hidden;
+  width: 100%;
+}
+.navigation__link:link, .navigation__link:visited {
+  backface-visibility: hidden;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 1rem;
+  color: rgba(255, 192, 57, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-background-size: 220%;
+  background-size: 230%;
+  transition: all 0.4s;
+}
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #000;
+  transform: translateX(1rem);
+  backface-visibility: hidden;
+}
 
 .side-nav {
   font-size: 2rem;

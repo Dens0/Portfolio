@@ -10,7 +10,31 @@
 
 
 
+  &__link
+    backface-visibility: hidden
+    width: 100%
 
+    &:link, &:visited
+      backface-visibility: hidden
+      display: inline-block
+      font-size: 2rem
+      font-weight: 300
+      padding: 1rem 1rem
+      color: rgba($colors-primary,.5)
+      text-decoration: none
+      text-transform: uppercase
+
+      -webkit-background-size: 220%
+      background-size: 230%
+      transition: all .4s
+
+
+
+    &:hover,&:active
+      background-position: 100%
+      color: $color-black
+      transform: translateX(1rem)
+      backface-visibility: hidden
 .side-nav
   font-size: 2rem
   list-style: none
