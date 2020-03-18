@@ -110,11 +110,19 @@
 .home__half, .contact__half, .about__half {
   flex-grow: 1;
 }
-.home__half-1, .contact__half-1, .about__half-1 {
+
+.section-1, .section-4, .section-7 {
+  display: flex;
+  position: relative;
+}
+.section-1__half, .section-4__half, .section-7__half {
+  flex-grow: 1;
+}
+.section-1__half-1, .section-4__half-1, .section-7__half-1 {
   background: #ff9e2d;
   background: linear-gradient(to right, #ffc039, #ff9e2d);
 }
-.home__half-2, .contact__half-2, .about__half-2 {
+.section-1__half-2, .section-4__half-2, .section-7__half-2 {
   background: #000000;
   background: -webkit-linear-gradient(to left, #1e1e1e, #000);
   background: linear-gradient(to left, #1e1e1e, #000);
@@ -138,7 +146,6 @@ body {
   width: 300vw;
   display: flex;
   flex-wrap: wrap;
-  transition: 0.5s linear;
 }
 
 .section {
