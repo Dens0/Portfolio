@@ -1,14 +1,11 @@
 
 .home
-  display: flex
-  position: relative
 
   &__center
     display: flex
     position: fixed
     background-color: #1E1E1E
     @include center_abs
-    flex-grow: 1
     width: 85vw
     height: 88vh
     border: 5px solid $colors-primary
@@ -100,19 +97,4 @@
     right: 2%
 
 
-
-  &__half
-    flex-grow: 1
-
-    &-1
-      background: $colors-primary-dark  /* fallback for old browsers */
-      background: linear-gradient(to right, $colors-primary, $colors-primary-dark) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-    &-2
-      background: #000000  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, $color-grey-dark-3, $color-black)  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, $color-grey-dark-3, $color-black) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 

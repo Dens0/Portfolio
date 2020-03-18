@@ -2,7 +2,7 @@
   display: flex
   font-family: 'Montserrat', sans-serif
   position: fixed
-
+  z-index: 10
   top: 15%
   //transform: translateY(-50%)
   //border: 2px solid $colors-primary
@@ -13,17 +13,19 @@
   &__link
     //width: 100%
     //display: inline-block
+    color: rgba($colors-primary,.7)
+
     &:link, &:visited
       backface-visibility: hidden
       display: inline-block
       font-size: 2rem
       font-weight: 300
-      color: rgba($colors-primary,.5)
       text-decoration: none
       text-transform: uppercase
       transition: all .4s
       padding: 1.5rem
       z-index: 6
+
       &:hover
         width: 250px
 
@@ -46,6 +48,7 @@
     display: flex
     transition: all .5s
 
+
   &__item:hover
     transform: translateX(-170px)
 
@@ -62,7 +65,6 @@
     background-color: $colors-primary
     transform: scaleY(0)
     transition: transform .2s, width .2s cubic-bezier(1,0,0,1) .2s, background-color .1s
-    backface-visibility: hidden
     z-index: 5
 
   &__item:hover::before
@@ -74,4 +76,8 @@
     padding-left: 1rem
     padding-right: 3rem
     font-size: 2.5rem
+    color: inherit
 
+.active
+  background-color: $colors-primary
+  color: $color-black
