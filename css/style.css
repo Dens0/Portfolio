@@ -126,6 +126,10 @@ body {
   position: relative;
 }
 
+.about {
+  font-size: 2.5rem;
+}
+
 body {
   font-family: "Russo One", sans-serif;
   font-weight: 300;
@@ -135,6 +139,7 @@ body {
 .heading__wrapper {
   display: flex;
   flex-grow: 1;
+  flex-basis: 100%;
 }
 
 .heading-primary {
@@ -246,10 +251,41 @@ body {
   flex-wrap: wrap;
   background-image: linear-gradient(to right, #1e1e1e, #363739);
 }
+.about__box {
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1rem 10rem;
+}
+.about__box:last-child {
+  margin-bottom: 6rem;
+}
 .about__text {
-  font-size: 2rem;
-  padding: 2rem 20rem;
+  font-size: 2.5rem;
   color: #ffffff;
+  padding: 2rem 6rem;
+}
+
+.story__img--left {
+  width: 100%;
+}
+.story__img--right {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.story__shape {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  float: left;
+  transform: translate(-2rem, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
