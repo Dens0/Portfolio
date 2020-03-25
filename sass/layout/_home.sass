@@ -1,39 +1,32 @@
 
 .home
-
-  &__center
-    display: flex
-    position: fixed
-    background-color: #1E1E1E
-    @include center_abs
-    width: 85vw
-    height: 88vh
-    border: 5px solid $colors-primary
-    box-shadow: -1rem 1rem 5rem rgba($color-black,.7)
-    overflow: hidden
-    backface-visibility: hidden
-    justify-content: flex-end
-
+  display: flex
+  position: relative
+  background-color: #1E1E1E
+  width: 100vw
+  height: 100vh
+  justify-content: flex-end
+  overflow: hidden
   &__myface
     position: absolute
     bottom: 0
     left: 50%
     transform: translateX(-50%)
-    height: 95%
+    height: 85%
     z-index: 9
   &__circle
     position: absolute
 
     border-radius: 50%
-    z-index: -1
+    //z-index: -1
     background-color: $colors-primary
     box-shadow: 0 10rem 30rem rgba($colors-primary,.7)
-    //background: radial-gradient(circle, rgba(13,255,220,1) 27%, rgba(0,255,192,1) 100%)
+
     &-1
-     width: 40rem
-     height: 40rem
-     top: 9%
-     left: 36%
+     width: 45rem
+     height: 45rem
+     top: 10%
+     left: 35%
 
     &-2
        width: 25rem
@@ -41,12 +34,15 @@
        bottom: 0
        right: 0
        transform: translate(40%,20%)
+
     &-3
       width: 25rem
       height: 25rem
       top: 60%
       left: 0
       transform: translate(-50%,-50%)
+      background-image: linear-gradient(to right,$colors-primary-dark ,$colors-primary )
+
     &-4
       background-color: transparent
       box-shadow: none
@@ -55,16 +51,15 @@
       top: 0
       left: 0
       transform: translate(-40%,-40%)
-      overflow: hidden
 
     &-code
       position: absolute
       font-size: 10rem
       font-family: 'Major Mono Display', monospace
       color: rgba($color-white,.05)
-      z-index: 1
       top: 50%
       left: 10%
+
 
 
 
@@ -92,7 +87,6 @@
     position: absolute
     font-size: 10rem
     color: rgba($color-white,.3)
-    z-index: -1
     top: 2%
     right: 2%
 

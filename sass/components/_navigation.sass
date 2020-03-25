@@ -4,6 +4,8 @@
   position: fixed
   z-index: 10
   top: 15%
+  right: 0
+
   //transform: translateY(-50%)
   //border: 2px solid $colors-primary
   transform: translateX(170px)
@@ -11,9 +13,9 @@
 
 
   &__link
-    //width: 100%
-    //display: inline-block
-    color: rgba($colors-primary,.7)
+    color: rgba($colors-primary-dark,.8)
+
+
 
     &:link, &:visited
       backface-visibility: hidden
@@ -43,14 +45,22 @@
   width: 250px
 
 
+
   &__item
     position: relative
     display: flex
     transition: all .5s
+    background-color: #1E1E1E
+
+
+
+
 
 
   &__item:hover
     transform: translateX(-170px)
+
+
 
 
 
@@ -62,7 +72,8 @@
     right: 0
     height: 100%
     width: 3px
-    background-color: $colors-primary
+    background-image: linear-gradient(to right,$colors-primary-dark ,$colors-primary )
+
     transform: scaleY(0)
     transition: transform .2s, width .2s cubic-bezier(1,0,0,1) .2s, background-color .1s
     z-index: 5
@@ -79,5 +90,7 @@
     color: inherit
 
 .active
-  background-color: $colors-primary
+  background-image: linear-gradient(to right,$colors-primary-dark ,$colors-primary )
+
   color: $color-black
+
